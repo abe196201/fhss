@@ -1,0 +1,54 @@
+<% if current_user %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>American Home Security Systems | My Account</title>
+</head>
+<body>
+
+	<%= render 'layouts/nav' %>
+
+	<section class="billboard">
+		<div class="wrapper">
+			<div class="caption">
+				<p style="text-align:center">Hello, <%= current_user.first_name %></p>
+			</div>
+		</div>
+	</section><!--  End Billboard  -->
+
+	<section class="testimonials wrapper">
+
+		<span class="sep_line sep_top">
+		</span>
+
+		<h2>Account Dashboard</h2>
+		<div class="testi_slider" id="tslider">
+			<div class="t">
+				<p>Name: <%= current_user.first_name %> <%= current_user.last_name %></p>
+			</div>
+			<div class="t">
+				<p>Zipcode: <%= current_user.zipcode %></p>
+			</div>
+			<div class="t">
+				<p>Security plan: None selected yet.</p>
+			</div>
+		</div>
+		<div id="t_navigation"></div>
+		<span class="sep_line sep_bottom"></span>
+
+	</section><!--  End Testimonials  -->
+
+	<div class="accordion-group">
+		<div class="img-responsive">
+			<section class="cta">
+				<%= link_to "Make a payment", "payments#new", :class => "cta_btn" %>
+				<span class="cta_sep"></span>
+			</section>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
+<% end %>

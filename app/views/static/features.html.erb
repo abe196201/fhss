@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>American Home Security Systems | Home</title>
+	</head>
+
+	<body class="preload" data-spy="scroll" data-offset="0" data-target="#navigation">
+
+	<%= render 'layouts/nav' %>
+
+	<section class="billboard">
+		<div class="wrapper">
+			<div class="caption">
+				<p style="text-align:center">We can fulfill any home or business security needs.
+			</div>
+		</div>
+	</section><!--  End Billboard  -->
+
+	<section id="home" name="home"></section>
+
+
+	<section id="desc" name="desc"></section>
+	<!-- INTRO WRAP -->
+	<div id="intro">
+		<div class="container">
+			<div class="row centered">
+			<div class="col-sm-6 col-md-6 col-lg-4">
+				<h3></h3>
+				<%= image_tag 'features_icon1.png' %>
+				<h3>Remote Control</h3>
+				<h4>Set your very own security settings anywhere, anytime.</h4>
+			</div>
+			
+	        <div class="col-sm-6 col-md-6 col-lg-4">
+	        	<h3></h3>
+			   	<%= image_tag 'features_icon2.png' %>
+				<h3>GPS Monitoring</h3>
+				<h4>Be sure that we know exactly where and when an intrusion or fire is occuring.</h4>
+			</div>
+
+
+        	<div class="col-sm-6 col-md-6 col-lg-4">
+        		<h3></h3>
+        		<%= image_tag 'features_icon3.png' %>
+				<h3>Motion Sensors</h3>
+				<h4>If anyone moves, you'll know.</h4>
+        	</div>
+
+        	<div class="col-sm-6 col-md-6 col-lg-12">
+        		<h3></h3>
+        		<%= image_tag 'features_icon4.png' %>
+				<h3>Emergency Panic Buttons</h3>
+				<h4>Call emergency services for fire and medical emergencies as well.</h4>
+        	</div>
+
+    </div>
+
+</div>
+</div>
+
+	<span class="sep_line sep_bottom"></span>
+
+	<div class="accordion-group">
+		<div class="img-responsive">
+			<section class="cta">
+				<%= link_to "Sign up for a free quote!", :class => "cta_btn" %>
+				<span class="cta_sep"></span>
+			</section>
+		</div>
+	</div>
+
+	<div id="c">
+		<div class="container"></div>
+	</div>
+
+	<script>
+		$('.carousel').carousel({
+		  interval: 3500
+		})
+	</script>
+
+	</body>
+</html>

@@ -1,18 +1,93 @@
-<h2>Sign up</h2>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>American Home Security Systems | About</title>
+	</head>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+	<body class="preload" data-spy="scroll" data-offset="0" data-target="#navigation">
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true %></div>
+	<%= render 'layouts/nav' %>
+	
 
-  <div><%= f.label :password %> <% if @validatable %><i>(<%= @minimum_password_length %> characters minimum)</i><% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
 
-  <div><%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
+		<span class="sep_line sep_top">
+		</span>
 
-  <div><%= f.submit "Sign up" %></div>
-<% end %>
+		<!-- registration form -->
+		<% if !current_user %>
+    <section class="testimonials wrapper">
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
 
-<%= render "devise/shared/links" %>
+        <div class="t">
+          <p>First Name:<br />
+          <%= f.text_field :first_name %></p>
+        </div>
+
+        <div class="t">
+          <p>Last Name:<br />
+          <%= f.text_field :last_name %></p>
+        </div>
+
+        <div class="t">
+          <p>Zipcode:<br />
+          <%= f.text_field :zipcode %></p>
+        </div>
+        
+        <div class="t">
+          <p>Phone Number:<br />
+          <%= f.text_field :phone_number %></p>
+        </div>
+
+        <div class="t">
+          <p>Email:<br />
+          <%= f.email_field :email, autofocus: true %></p>
+        </div>
+
+        <div class="t">
+          <p>Password:
+          <% if @validatable %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br /></p>
+          <%= f.password_field :password, autocomplete: "off" %>
+        </div>
+
+        <div class="t">
+          <p>Password Confirmation:<br />
+          <%= f.password_field :password_confirmation, autocomplete: "off" %></p>
+        </div>
+
+        <div class="actions" style="margin-top:10px">
+          <%= f.submit "Sign up" %>
+        </div>
+      <% end %>
+    <% end %>
+		
+	<span class="sep_line sep_bottom"></span>
+
+	</section><!--  End Testimonials  -->
+
+	<%= render "devise/shared/links" %>
+
+
+	<div class="accordion-group">
+		<div class="img-responsive">
+			<section class="cta">
+				<%= link_to "Sign up for a free quote!", :class => "cta_btn" %>
+				<span class="cta_sep"></span>
+			</section>
+		</div>
+	</div>
+
+	<div id="c">
+		<div class="container"></div>
+	</div>
+
+	<script>
+		$('.carousel').carousel({
+		  interval: 3500
+		})
+	</script>
+
+	</body>
+</html>

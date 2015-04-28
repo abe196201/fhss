@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>American Home Security Systems | Pricing</title>
+	</head>
+
+	<body class="preload" data-spy="scroll" data-offset="0" data-target="#navigation">
+
+	<%= render 'layouts/nav' %>
+
+	<section class="billboard">
+		<div class="wrapper">
+			<div class="caption">
+				<p style="text-align:center">Choose the plan that fits your budget and your needs.
+			</div>
+		</div>
+	</section><!--  End Billboard  -->
+
+	<section id="home" name="home"></section>
+
+
+	<section id="desc" name="desc"></section>
+	<!-- INTRO WRAP -->
+	<div id="intro">
+		<div class="container">
+			<div class="row centered">
+			<div class="col-sm-6 col-md-6 col-lg-4">
+				<h3><b>Special Offer!</b></h3>
+				<%= link_to(image_tag("package_small.png") , image_path("package.png") )  %>
+				<h4>Pay nothing for the equipment!</h4>
+				<h3>Basic Package ($39.95/month)</h3>
+				
+				<ul>
+					<li>One contol panel</li>
+					<li>One keypad</li>
+					<li>Two door contacts</li>
+					<li>Motion detector with camera</li>
+					<li>Choose to add more cameras! ($5/month extra for each one)</li>
+					<li><b>Free</b> installation!</li>
+			</div>
+			
+	        <div class="col-sm-6 col-md-6 col-lg-4">
+	        	<h3></h3>
+			   	<%= image_tag 'home_icon2.png' %>
+				<h3>Fast Response Time</h3>
+				<h4>Our average response time from alarm triggering to authorities arriving on the scene is five minutes.</h4>
+			</div>
+
+
+        	<div class="col-sm-6 col-md-6 col-lg-4">
+        		<h3></h3>
+        		<%= image_tag 'home_icon3.png' %>
+				<h3>Burglary and Fire Protection</h3>
+				<h4>Why stop at protecting your home from burglars?  We also have fire alarms that trigger at a certain threshold of carbon monoxide.</h4>
+        	</div>
+
+    </div>
+
+</div>
+</div>
+
+	<span class="sep_line sep_bottom"></span>
+
+	<div class="accordion-group">
+		<div class="img-responsive">
+			<section class="cta">
+				<%= link_to "Sign up for a free quote!", :class => "cta_btn" %>
+				<span class="cta_sep"></span>
+			</section>
+		</div>
+	</div>
+
+	<div id="c">
+		<div class="container"></div>
+	</div>
+
+	<script>
+		$('.carousel').carousel({
+		  interval: 3500
+		})
+	</script>
+
+	</body>
+</html>

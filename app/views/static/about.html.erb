@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>American Home Security Systems | About</title>
+	</head>
+
+	<body class="preload" data-spy="scroll" data-offset="0" data-target="#navigation">
+
+	<%= render 'layouts/nav' %>
+
+	<section class="billboard">
+		<div class="wrapper">
+			<div class="caption">
+				<p style="text-align:center">American Home Security Systems is a quickly-growing security firm based in Columbus, Ohio.
+			</div>
+		</div>
+	</section><!--  End Billboard  -->
+
+	<section id="home" name="home"></section>
+
+
+	<section id="desc" name="desc"></section>
+	
+
+	<section class="testimonials wrapper">
+
+		<span class="sep_line sep_top">
+		</span>
+
+		<h2>About Us</h2>
+		<div class="testi_slider" id="tslider">
+			<div class="t">
+				<p>We provide state-of-the-art, reliable solutions to keep your home or business safe from harm.</p>
+			</div>
+			<div class="t">
+				<p>With American Home Security Systems, there's nothing to fear, and nothing to worry about.  You're safe with us.</p>
+			</div>
+			<div class="t">
+				<p>With our 99.5% guaranteed network uptime, immediate alert systems, and blazing fast response time, you can be sure that you'll be quickly taken care of in all situations.</p>
+			</div>
+		</div>
+		<div id="t_navigation"></div>
+		<span class="sep_line sep_bottom"></span>
+
+	</section><!--  End Testimonials  -->
+
+
+	<div class="accordion-group">
+		<div class="img-responsive">
+			<section class="cta">
+				<%= link_to "Request a free quote!", new_user_registration_path , :class => "cta_btn" %>
+				<span class="cta_sep"></span>
+			</section>
+		</div>
+	</div>
+
+	<div id="c">
+		<div class="container"></div>
+	</div>
+
+	<script>
+		$('.carousel').carousel({
+		  interval: 3500
+		})
+	</script>
+
+	</body>
+</html>
